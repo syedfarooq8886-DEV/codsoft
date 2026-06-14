@@ -1,0 +1,396 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Mohammad Farooq | Landing Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#1a1a1a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    color:white;
+}
+
+.logo h2{
+    font-size:32px;
+}
+
+.logo p{
+    font-size:13px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#4a8cff;
+}
+
+/* Hero Section */
+
+.hero{
+    background:#444;
+    color:white;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:50px 8%;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#4a8cff;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:5px;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+.hero-img{
+    width:40%;
+    text-align:center;
+}
+
+.hero-img img{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+}
+
+/* About */
+
+.about{
+    padding:80px 8%;
+    background:white;
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.about img{
+    width:350px;
+    border-radius:15px;
+}
+
+.about-content h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/* Services */
+
+.services{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+/* Skills */
+
+.skills{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+.skills h2{
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.skill-list span{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:25px;
+}
+
+/* Contact */
+
+.contact{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#1a1a1a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-img{
+    width:100%;
+    margin-top:30px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about img{
+    width:100%;
+    max-width:350px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <h2>Online Portfolio</h2>
+        <p>Syed Mohammad Farooq</p>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>SYED MOHAMMAD FAROOQ</h1>
+
+        <p>
+            Final Year Computer Science Engineering Student,
+            passionate about Web Development, Cloud Computing
+            and Machine Learning. Building modern solutions
+            through technology and innovation.
+        </p>
+
+        <a href="resume.pdf" class="btn">
+            Download Resume
+        </a>
+    </div>
+
+    <div class="hero-img">
+        <img src="profile.jpg" alt="Farooq">
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <img src="profile.jpg" alt="Farooq">
+
+    <div class="about-content">
+
+        <h2>ABOUT ME</h2>
+
+        <p>
+            I am Syed Mohammad Farooq, a 4th Year Computer Science
+            Engineering student from Sri Sai Institute of Technology
+            and Science.
+        </p>
+
+        <p>
+            My interests include Web Development,
+            Cloud Computing, Machine Learning and
+            Software Development. I enjoy creating
+            user-friendly websites and solving
+            real-world problems through technology.
+        </p>
+
+        <a href="resume.pdf" class="btn">
+            Download Resume
+        </a>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h2>MY SERVICES</h2>
+
+    <div class="service-box">
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Responsive websites using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Computing</h3>
+            <p>Cloud-based solutions and deployment concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Machine Learning</h3>
+            <p>Building predictive models using Python.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="skills" id="skills">
+
+    <h2>MY SKILLS</h2>
+
+    <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>GitHub</span>
+        <span>Cloud Computing</span>
+        <span>Machine Learning</span>
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>CONTACT ME</h2>
+
+    <p>Email: syedfarooq6866@gmail.com</p>
+
+    <p>Phone: +91 8886098937</p>
+
+    <p>LinkedIn: linkedin.com/in/syed-mohammad-farooq-2a1335296</p>
+
+    <p>GitHub: github.com/syedfarooq8886-DEV</p>
+
+</section>
+
+<footer>
+    © 2026 Syed Mohammad Farooq | All Rights Reserved
+</footer>
+
+</body>
+</html>
+```
